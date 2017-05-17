@@ -29,8 +29,8 @@ public class SortAlgorithmsTest {
         long time = sort(actual, algorithm);
 
         // THEN
-        assertArrayEquals(EXPECTED, actual, algorithm.getClass().getSimpleName() + " not works!");
-        System.out.println(String.format("%s: %d ms on random ordered array.", algorithm.getClass().getSimpleName(), time));
+        assertArrayEquals(EXPECTED, actual, algorithm + " not works!");
+        System.out.println(String.format("%s: %d ms on random ordered array.", algorithm, time));
     }
 
     @ParameterizedTest
@@ -44,8 +44,8 @@ public class SortAlgorithmsTest {
         long time = sort(actual, algorithm);
 
         // THEN
-        assertArrayEquals(EXPECTED, actual, algorithm.getClass().getSimpleName() + " not works!");
-        System.out.println(String.format("%s: %d ms on reverse ordered array.", algorithm.getClass().getSimpleName(), time));
+        assertArrayEquals(EXPECTED, actual, algorithm + " not works!");
+        System.out.println(String.format("%s: %d ms on reverse ordered array.", algorithm, time));
     }
 
     @ParameterizedTest
@@ -58,8 +58,8 @@ public class SortAlgorithmsTest {
         long time = sort(actual, algorithm);
 
         // THEN
-        assertArrayEquals(EXPECTED, actual, algorithm.getClass().getSimpleName() + " not works!");
-        System.out.println(String.format("%s: %d ms on ordered array.", algorithm.getClass().getSimpleName(), time));
+        assertArrayEquals(EXPECTED, actual, algorithm + " not works!");
+        System.out.println(String.format("%s: %d ms on ordered array.", algorithm, time));
     }
 
     // Returns sort algorithms to test
