@@ -1,6 +1,6 @@
 package pl.kskora.algorithms.sort;
 
-public class InsertionSort implements ISortAlgorithm {
+public class InsertionSort extends SortAlgorithm  {
 
     public void sort(int[] array) {
         int n = array.length;

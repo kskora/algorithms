@@ -1,6 +1,6 @@
 package pl.kskora.algorithms.sort;
 
-public class SelectionSort implements ISortAlgorithm {
+public class SelectionSort extends SortAlgorithm  {
     @Override
     public void sort(int[] array) {
         for (int i = 0; i < array.length - 1; ++i) {

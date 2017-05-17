@@ -2,7 +2,7 @@ package pl.kskora.algorithms.sort;
 
 import java.util.Arrays;
 
-public class MergeSort implements ISortAlgorithm {
+public class MergeSort extends SortAlgorithm  {
 
     @Override
     public void sort(int[] array) {

@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class SortAlgorithmsTest {
-    private static final int SIZE = 100000;
+    private static final int SIZE = 10000;
     private static final int[] EXPECTED = new int[SIZE];
 
     @BeforeAll
@@ -64,7 +64,7 @@ public class SortAlgorithmsTest {
 
     // Returns sort algorithms to test
     static Stream sortAlgorithmsProvider() {
-        return Stream.of(new InsertionSort(), new SelectionSort(), new MergeSort());
+        return Stream.of(new InsertionSort(), new SelectionSort(), new MergeSort(), new BubbleSort());
     }
 
     // Sort array and return sorting time
